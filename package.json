@@ -1,0 +1,29 @@
+{
+  "name": "best-string-ever",
+  "author": "Matt Hova <matthova87@gmail.com>",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "description": "An object with the best string ever",
+  "scripts": {
+    "test": "jest",
+    "js": "babel --modules common src --out-dir dist",
+    "prepublish": "npm run js"
+  },
+  "jest": {
+    "scriptPreprocessor": "__tests__/jest.conf.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "./__tests__/jest.conf.js"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "jest-cli": "^0.2.1"
+  },
+  "keywords": [
+    "best",
+    "string",
+    "ever"
+  ]
+}
